@@ -1,7 +1,6 @@
 TABFILE = Kouyoumjian-Torossian.tab
 
 all:
-	echo "Making a new tabfile"
 	cat Ա > $(TABFILE)
 	cat Բ >> $(TABFILE)
 	cat Գ >> $(TABFILE)
@@ -41,6 +40,4 @@ all:
 	cat Օ >> $(TABFILE)
 	cat Ֆ >> $(TABFILE)
 	echo '' >> $(TABFILE)
-	echo "making new dictionary files."
 	stardict_tabfile $(TABFILE)
-	echo "done!"
